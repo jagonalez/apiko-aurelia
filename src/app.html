@@ -1,0 +1,7 @@
+<template>
+  <require from="resources/elements/nav-bar.html"></require>
+  <nav-bar router.bind="router" logout.call="logout()" if.bind="account.isAuthenticated"></nav-bar>
+  <div class="container">
+    <router-view></router-view>
+  </div>
+</template>

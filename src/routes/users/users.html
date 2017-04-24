@@ -1,0 +1,21 @@
+<template>
+  <h2>Users</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Role</th>
+        <th>Created</th>
+        <th>Last Updated</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr repeat.for="user of users">
+        <td>${user.username}</td>
+        <td>${user.role}</td>
+        <td>${user.createdAt}</td>
+        <td>${user.updatedAt}</td>
+      </tr>
+    </tbody>
+  </table>
+</template>
